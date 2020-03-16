@@ -1,0 +1,71 @@
+/* ------------- Top Navigation ------------- */
+header .navbar {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+}
+header .navbar .nav-links {
+  list-style-type: none;
+  display: none;
+}
+header .navbar .nav-links li .nav-link,
+header .navbar .brand {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .navbar .nav-links li {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+header .navbar .brand {
+  display: inline-block;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+header .navbar .navbar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.4rem;
+}
+header .navbar .active {
+  display: block;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+@media screen and (min-width: 768px) {
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 7rem;
+    align-items: center;
+  }
+
+  header .navbar .nav-links {
+    display: flex;
+    margin-right: 3rem;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  header .navbar .nav-links li {
+    margin: 0;
+  }
+  header .navbar li .nav-link {
+    margin-left: 4rem;
+  }
+  header .navbar .brand {
+    margin-top: 0;
+  }
+  header .navbar .navbar-toggle {
+    display: none;
+  }
+  header .navbar .brand:hover,
+  header .navbar li .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
