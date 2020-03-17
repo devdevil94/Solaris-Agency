@@ -45,7 +45,7 @@ section#header-hero {
   background-color: white;
 }
 #header-hero {
-  min-height: 100vh;
+  min-height: 48rem;
 }
 #header-hero h1,
 #header-hero h2,
@@ -56,27 +56,36 @@ section#header-hero {
   font-size: 4.5rem;
 }
 #header-hero h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 #header-hero p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 #header-hero .row {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 #header-hero .row .column:nth-child(1) {
   padding: 2rem 0;
   margin-bottom: 3rem;
-  /* text-align: center; */
+  text-align: center;
   /* width: 50rem; */
   /* height: 50rem; */
+}
+#header-hero .row .column:nth-child(2) {
+  width: 100%;
+  padding: 1rem;
+}
+#header-hero .row .column:nth-child(2) img {
+  display: block;
+  margin: 0 auto;
+  max-width: 42rem;
 }
 #header-hero .row .column .call-to-action button {
   font-size: 1.6rem;
   padding: 1rem 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 16.2rem;
 }
 #header-hero .row .column .call-to-action button:nth-child(1) {
@@ -264,10 +273,11 @@ section#testimonials {
   }
 
   #header-hero .row {
-    flex-direction: column;
+    flex-direction: row;
   }
   #header-hero .row .column:nth-child(1) {
     margin-bottom: 3rem;
+    text-align: left;
   }
   #header-hero .row .column .call-to-action button:nth-child(1) {
     margin-bottom: 2rem;
@@ -307,6 +317,7 @@ section#testimonials {
   }
   #header-hero .row .column:nth-child(1) {
     margin-bottom: 0;
+    text-align: left;
   }
   #header-hero .row .column .call-to-action button:nth-child(1) {
     margin-bottom: 0;
@@ -347,6 +358,7 @@ section#testimonials {
   }
   #header-hero .row .column:nth-child(1) {
     margin-bottom: 0;
+    text-align: left;
   }
   #header-hero .row .column .call-to-action button:nth-child(1) {
     margin-bottom: 0;
