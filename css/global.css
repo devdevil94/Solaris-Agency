@@ -112,7 +112,7 @@ a {
   background-color: var(--primary-color);
 }
 .bg-secondary {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .text-primary {
   color: var(--primary-color);
@@ -126,6 +126,17 @@ a {
 .text-dark {
   color: var(--primary-text-color);
 }
+
+.w-1\/2 {
+  width: 50%;
+}
+.w-1\/3 {
+  width: 33.33%;
+}
+.w-2\/3 {
+  width: 66.67%;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
   .container {
