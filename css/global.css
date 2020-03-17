@@ -3,10 +3,12 @@
 /* ------------- THEME ------------- */
 :root {
   --primary-color: #6c63ff;
+  --secondary-color: #ffbb00;
   --primary-text-color: #2d2d2d;
+  --secondary-text-color: #58647b;
+  --grey-text-color: #58647b;
   /* --primary-text-color: #3e3e54; */
   /* --secondary-text-color: #696969; */
-  --secondary-text-color: #58647b;
   /* --secondary-text-color: #a9a9a9; */
 }
 
@@ -108,6 +110,21 @@ a {
 
 .bg-primary {
   background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-grey {
+  color: var(--grey-text-color);
+}
+.text-dark {
+  color: var(--primary-text-color);
 }
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
