@@ -127,6 +127,62 @@ section#header-hero {
   font-size: 1.6rem;
   margin: 1.3rem 0;
 }
+/* ------------- Testimonials ------------- */
+section#testimonials {
+  background-color: white;
+}
+#testimonials > .container > h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+#testimonials p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+#testimonials > .container > p {
+  text-align: center;
+  max-width: 55rem;
+  margin: 0 auto;
+  color: var(--secondary-text-color);
+}
+#testimonials .row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#testimonials .column {
+  width: 100%;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#testimonials .column .person-info {
+  display: flex;
+  /* margin-bottom: 1.5rem; */
+}
+#testimonials .column .person-info span {
+  padding: 0.5rem 0;
+}
+#testimonials .column .person-info img {
+  width: 6.5rem;
+  height: 6.5rem;
+  margin-right: 1.5rem;
+}
+#testimonials .column .person-info span h3.person-info_name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#testimonials .column .person-info span h4.person-info_occup {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+#testimonials .column p {
+  color: var(--secondary-text-color);
+}
 
 /* ------------- MEDIA QUERIES ------------- */
 @media screen and (min-width: 768px) {
@@ -176,6 +232,14 @@ section#header-hero {
   #services .row .column {
     width: 100%;
   }
+
+  #testimonials .row {
+    flex-direction: column;
+  }
+  #testimonials .column {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -197,6 +261,14 @@ section#header-hero {
     width: 30rem;
     margin-bottom: 0;
   }
+
+  #testimonials .row {
+    flex-direction: row;
+  }
+  #testimonials .column {
+    width: 30rem;
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   #header-hero .row {
@@ -213,6 +285,14 @@ section#header-hero {
     flex-direction: row;
   }
   #services .row .column {
+    width: 30rem;
+    margin-bottom: 0;
+  }
+
+  #testimonials .row {
+    flex-direction: row;
+  }
+  #testimonials .column {
     width: 30rem;
     margin-bottom: 0;
   }
