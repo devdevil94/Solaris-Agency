@@ -128,38 +128,45 @@ section#header-hero {
   margin: 1.3rem 0;
 }
 
-#services_design {
+#services_design,
+#services_marketing {
   background-color: white;
 }
 #services_design .row .column,
-#services_development .row .column {
+#services_development .row .column,
+#services_marketing .row .column {
   width: 100%;
   text-align: center;
   padding: 1.5rem 2rem;
 }
 #services_design .row .column img,
-#services_development .row .column img {
+#services_development .row .column img,
+#services_marketing .row .column img {
   width: 100%;
 }
 #services_design .row .column h2,
-#services_development .row .column h2 {
+#services_development .row .column h2,
+#services_marketing .row .column h2 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
 #services_design .row .column p,
-#services_development .row .column p {
+#services_development .row .column p,
+#services_marketing .row .column p {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
 
 #services_design .row .column button,
-#services_development .row .column button {
+#services_development .row .column button,
+#services_marketing .row .column button {
   color: white;
   padding: 1rem;
   border-radius: 0.3rem;
 }
 #services_design .row,
-#services_development .row {
+#services_development .row,
+#services_marketing .row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -282,11 +289,13 @@ section#testimonials {
   }
 
   #services_design .row,
-  #services_development .row {
+  #services_development .row,
+  #services_marketing .row {
     flex-direction: row;
   }
   #services_design .row .column,
-  #services_development .row .column {
+  #services_development .row .column,
+  #services_marketing .row .column {
     text-align: left;
     width: 50%;
   }
@@ -321,11 +330,13 @@ section#testimonials {
   }
 
   #services_design .row,
-  #services_development .row {
+  #services_development .row,
+  #services_marketing .row {
     flex-direction: row;
   }
   #services_design .row .column,
-  #services_development .row .column {
+  #services_development .row .column,
+  #services_marketing .row .column {
     text-align: left;
     width: 50%;
   }
@@ -358,11 +369,13 @@ section#testimonials {
   }
 
   #services_design .row,
-  #services_development .row {
+  #services_development .row,
+  #services_marketing .row {
     flex-direction: row;
   }
   #services_design .row .column,
-  #services_development .row .column {
+  #services_development .row .column,
+  #services_marketing .row .column {
     text-align: left;
     width: 50%;
   }
