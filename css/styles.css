@@ -127,6 +127,40 @@ section#header-hero {
   font-size: 1.6rem;
   margin: 1.3rem 0;
 }
+
+#services_design {
+  background-color: white;
+}
+#services_design .row .column {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+#services_design .row .column img {
+  width: 100%;
+}
+#services_design .row .column h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+#services_design .row .column p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+#services_design .row .column button {
+  color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+#services_design .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+}
+
 /* ------------- Testimonials ------------- */
 section#testimonials {
   background-color: white;
@@ -240,6 +274,14 @@ section#testimonials {
     width: 100%;
     margin-bottom: 2rem;
   }
+
+  #services_design .row {
+    flex-direction: row;
+  }
+  #services_design .row .column {
+    text-align: left;
+    width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -269,6 +311,14 @@ section#testimonials {
     width: 30rem;
     margin-bottom: 0;
   }
+
+  #services_design .row {
+    flex-direction: row;
+  }
+  #services_design .row .column {
+    text-align: left;
+    width: 50%;
+  }
 }
 @media (min-width: 1200px) {
   #header-hero .row {
@@ -295,5 +345,13 @@ section#testimonials {
   #testimonials .column {
     width: 30rem;
     margin-bottom: 0;
+  }
+
+  #services_design .row {
+    flex-direction: row;
+  }
+  #services_design .row .column {
+    text-align: left;
+    width: 50%;
   }
 }
