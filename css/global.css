@@ -7,6 +7,7 @@
   --primary-text-color: #2d2d2d;
   --secondary-text-color: #58647b;
   --grey-text-color: #58647b;
+  --grey-light-color: #eaeaea;
   /* --primary-text-color: #3e3e54; */
   /* --secondary-text-color: #696969; */
   /* --secondary-text-color: #a9a9a9; */
@@ -145,6 +146,12 @@ a {
 }
 .w-2\/3 {
   width: 66.67%;
+}
+
+.text-field {
+  padding: 1rem 0.5rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--grey-text-color);
 }
 
 /* ------------- MEDIA QUERIES ------------- */
