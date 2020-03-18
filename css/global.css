@@ -107,6 +107,16 @@ a {
   height: 0.4rem;
   margin: 4rem auto;
 }
+.separator-left {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 4rem 0;
+}
+.separator-left-sm {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 2rem 0;
+}
 
 .bg-primary {
   background-color: var(--primary-color);
