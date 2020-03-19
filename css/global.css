@@ -149,7 +149,7 @@ a {
 }
 
 .text-field {
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   font-size: 1.6rem;
   border: 1px solid var(--grey-text-color);
 }

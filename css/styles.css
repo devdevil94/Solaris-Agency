@@ -144,7 +144,7 @@ section#header-hero {
 #services_development .row .column,
 #services_marketing .row .column {
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   padding: 1.5rem 2rem;
 }
 #services_design .row .column img,
@@ -337,7 +337,7 @@ section#testimonials {
   #services_design .row .column,
   #services_development .row .column,
   #services_marketing .row .column {
-    text-align: left;
+    /* text-align: left; */
     width: 50%;
   }
 
@@ -390,20 +390,20 @@ section#testimonials {
   #services_design .row .column,
   #services_development .row .column,
   #services_marketing .row .column {
-    text-align: left;
+    /* text-align: left; */
     width: 50%;
   }
 
-  #newsletter-form .content form {
+  #newsletter- .content form {
     flex-direction: row;
   }
-  #newsletter-form .content form button {
+  #newsletter- .content form button {
     width: 35%;
   }
-  #newsletter-form .content form input {
+  #newsletter- .content form input {
     width: 60%;
   }
-  #newsletter-form .content form input {
+  #newsletter- .content form input {
     margin-bottom: 0;
   }
 }
@@ -443,7 +443,7 @@ section#testimonials {
   #services_design .row .column,
   #services_development .row .column,
   #services_marketing .row .column {
-    text-align: left;
+    /* text-align: left; */
     width: 50%;
   }
 }
