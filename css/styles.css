@@ -340,6 +340,17 @@ section#testimonials {
     text-align: left;
     width: 50%;
   }
+
+  #newsletter-form .content form {
+    flex-direction: column;
+  }
+  #newsletter-form .content form button,
+  #newsletter-form .content form input {
+    width: 100%;
+  }
+  #newsletter-form .content form input {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -381,6 +392,19 @@ section#testimonials {
   #services_marketing .row .column {
     text-align: left;
     width: 50%;
+  }
+
+  #newsletter-form .content form {
+    flex-direction: row;
+  }
+  #newsletter-form .content form button {
+    width: 35%;
+  }
+  #newsletter-form .content form input {
+    width: 60%;
+  }
+  #newsletter-form .content form input {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
