@@ -239,6 +239,38 @@ section#testimonials {
   color: var(--secondary-text-color);
 }
 
+/* ------------- Newsletter Form ------------- */
+#newsletter-form h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#newsletter-form .content {
+  max-width: 55rem;
+  margin: 0 auto;
+  text-align: center;
+}
+#newsletter-form .content p {
+  font-size: 1.8rem;
+}
+#newsletter-form .content form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  flex-direction: column;
+}
+#newsletter-form .content form button {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: white;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+}
+#newsletter-form .content form input {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media screen and (min-width: 768px) {
   header .navbar {
