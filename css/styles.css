@@ -271,6 +271,19 @@ section#testimonials {
   margin-bottom: 2rem;
 }
 
+#content-1 .content_inner {
+  max-width: 60rem;
+  text-align: center;
+  margin: 0 auto;
+}
+#content-1 .content_inner h1 {
+  margin-bottom: 3rem;
+  font-size: 4.5rem;
+}
+#content-1 .content_inner p {
+  font-size: 1.8rem;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media screen and (min-width: 768px) {
   header .navbar {
@@ -394,16 +407,16 @@ section#testimonials {
     width: 50%;
   }
 
-  #newsletter- .content form {
+  #newsletter-form .content form {
     flex-direction: row;
   }
-  #newsletter- .content form button {
+  #newsletter-form .content form button {
     width: 35%;
   }
-  #newsletter- .content form input {
+  #newsletter-form .content form input {
     width: 60%;
   }
-  #newsletter- .content form input {
+  #newsletter-form .content form input {
     margin-bottom: 0;
   }
 }
@@ -445,5 +458,18 @@ section#testimonials {
   #services_marketing .row .column {
     /* text-align: left; */
     width: 50%;
+  }
+
+  #newsletter-form .content form {
+    flex-direction: row;
+  }
+  #newsletter-form .content form button {
+    width: 35%;
+  }
+  #newsletter-form .content form input {
+    width: 60%;
+  }
+  #newsletter-form .content form input {
+    margin-bottom: 0;
   }
 }
