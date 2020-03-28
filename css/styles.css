@@ -160,7 +160,8 @@ section#header-hero {
 }
 #services_design .row .column p,
 #services_development .row .column p,
-#services_marketing .row .column p {
+#services_marketing .row .column p,
+#services_design .row .column ul {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
@@ -180,6 +181,23 @@ section#header-hero {
   justify-content: space-between;
   padding: 0.5rem;
   margin: 0.8rem 0;
+}
+
+#services_design .row .column ul li,
+#services_development .row .column ul li,
+#services_marketing .row .column ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  vertical-align: baseline;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+#services_design .row .column ul li i,
+#services_development .row .column ul li i,
+#services_marketing .row .column ul li i {
+  /* font-weight: bold; */
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
 }
 
 /* ------------- Testimonials ------------- */
