@@ -195,7 +195,6 @@ section#header-hero {
 #services_design .row .column ul li i,
 #services_development .row .column ul li i,
 #services_marketing .row .column ul li i {
-  /* font-weight: bold; */
   margin-right: 0.5rem;
   color: var(--secondary-color);
 }
