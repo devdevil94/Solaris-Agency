@@ -41,9 +41,6 @@ header .navbar .active {
 }
 
 /* ------------- Top Navigation ------------- */
-section#header-hero {
-  background-color: white;
-}
 #header-hero {
   min-height: 48rem;
 }
@@ -200,14 +197,10 @@ section#header-hero {
 }
 
 /* ------------- Testimonials ------------- */
-section#testimonials {
-  background-color: white;
-}
-#testimonials > .container > h2 {
+#testimonials > .container > h1 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: var(--primary-text-color);
 }
 #testimonials p {
   font-size: 1.8rem;
@@ -217,7 +210,6 @@ section#testimonials {
   text-align: center;
   max-width: 55rem;
   margin: 0 auto;
-  color: var(--secondary-text-color);
 }
 #testimonials .row {
   display: flex;
@@ -251,9 +243,6 @@ section#testimonials {
 #testimonials .column .person-info span h4.person-info_occup {
   font-weight: normal;
   font-size: 1.5rem;
-}
-#testimonials .column p {
-  color: var(--secondary-text-color);
 }
 
 /* ------------- Newsletter Form ------------- */
@@ -304,15 +293,15 @@ section#testimonials {
 /* ------------- Contact Form ------------- */
 #contact {
   text-align: center;
-  background-color: white;
 }
 .contact-container {
   border-top: 0.5rem solid #6c63ff;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   padding: 5rem 0;
+  background-color: white;
 }
-.contact-container h2 {
+.contact-container h1 {
   font-size: 4.5rem;
   margin-bottom: 1.5rem;
   color: #2d2d2d;
@@ -443,6 +432,20 @@ section#testimonials {
   #newsletter-form .content form input {
     margin-bottom: 2rem;
   }
+
+  .contact-container-inner {
+    padding: 0 2rem;
+  }
+  .contact-container-inner .inline-fields {
+    flex-direction: column;
+  }
+  .contact-container-inner input[name="name"],
+  .contact-container-inner input[name="email"] {
+    width: 100%;
+  }
+  .contact-container-inner input[name="name"] {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -498,6 +501,20 @@ section#testimonials {
   #newsletter-form .content form input {
     margin-bottom: 0;
   }
+
+  .contact-container-inner {
+    padding: 0;
+  }
+  .contact-container-inner .inline-fields {
+    flex-direction: row;
+  }
+  .contact-container-inner input[name="name"],
+  .contact-container-inner input[name="email"] {
+    width: 29rem;
+  }
+  .contact-container-inner input[name="name"] {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   #header-hero .row {
@@ -549,6 +566,20 @@ section#testimonials {
     width: 60%;
   }
   #newsletter-form .content form input {
+    margin-bottom: 0;
+  }
+
+  .contact-container-inner {
+    padding: 0;
+  }
+  .contact-container-inner .inline-fields {
+    flex-direction: row;
+  }
+  .contact-container-inner input[name="name"],
+  .contact-container-inner input[name="email"] {
+    width: 29rem;
+  }
+  .contact-container-inner input[name="name"] {
     margin-bottom: 0;
   }
 }
