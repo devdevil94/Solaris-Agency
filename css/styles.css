@@ -301,6 +301,68 @@ section#testimonials {
   font-size: 1.8rem;
 }
 
+/* ------------- Contact Form ------------- */
+#contact {
+  text-align: center;
+  background-color: white;
+}
+.contact-container {
+  border-top: 0.5rem solid #6c63ff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 5rem 0;
+}
+.contact-container h2 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d2d2d;
+}
+.contact-container-inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.contact-container-inner p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #696969;
+}
+.contact-container-inner input,
+.contact-container-inner textarea {
+  padding: 0.5rem;
+  border: 1px solid #696969;
+  border-radius: 0.3rem;
+}
+.contact-container-inner .inline-fields {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contact-container-inner input[name="name"],
+.contact-container-inner input[name="email"] {
+  width: 100%;
+}
+.contact-container-inner input[name="name"] {
+  margin-bottom: 2rem;
+}
+.contact-container-inner input[name="subject"] {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact-container-inner textarea[name="message"] {
+  width: 100%;
+  resize: none;
+  margin-bottom: 2rem;
+}
+.contact-container-inner button {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media screen and (min-width: 768px) {
   header .navbar {
