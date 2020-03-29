@@ -9,6 +9,8 @@
   --grey-text-color: #58647b;
   --grey-light-color: #eaeaea;
   /* --primary-text-color: #3e3e54; */
+  /* --primary-text-color: #555555; */
+  /* --secondary-text-color: #cccccc; */
   /* --secondary-text-color: #696969; */
   /* --secondary-text-color: #a9a9a9; */
 }
@@ -86,6 +88,10 @@ a {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+.float-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
 .flex-1 {
   flex: 1 0 auto;
@@ -119,11 +125,17 @@ a {
   margin: 2rem 0;
 }
 
+.bg-white {
+  background-color: #fff;
+}
 .bg-primary {
   background-color: var(--primary-color);
 }
 .bg-secondary {
   background-color: var(--secondary-color);
+}
+.text-white {
+  color: #fff;
 }
 .text-primary {
   color: var(--primary-color);
@@ -152,6 +164,13 @@ a {
   padding: 1rem;
   font-size: 1.6rem;
   border: 1px solid var(--grey-text-color);
+}
+
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ------------- MEDIA QUERIES ------------- */
