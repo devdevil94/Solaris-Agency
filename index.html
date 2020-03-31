@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <title>Agency Template 1</title>
   </head>
   <body>
@@ -25,10 +27,10 @@
             <a href="#testimonials" class="nav-link">Testimonials</a>
           </li>
           <li>
-            <a href="#contact" class="nav-link">Contact Us</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li>
-            <a href="#newsletter-form" class="nav-link">Subscribe</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -213,21 +215,99 @@
         </div>
       </div>
     </section>
-    <!-- <section id="content-1">
-      <div class="container">
-        <div class="content_inner">
-          <h1>Devdevil Content Block</h1>
-          <p class="text-grey">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            totam distinctio vel eius incidunt porro nobis nostrum eos,
-            voluptatibus minus minima cum molestias enim voluptatem consequatur.
-          </p>
-        </div>
+    <section id="portfolio">
+      <h1 class="uppercase text-dark">Our Work</h1>
+      <p class="text-grey">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa
+        molestias dolores id. Illo, odio!
+      </p>
+      <div class="separator bg-primary"></div>
+      <div class="carousel-wrapper">
+        <ul class="projects-list owl-carousel owl-theme">
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/silver-and-black-camera-silver-and-black-laptop-blue-ceramic-574664.jpg"
+                alt="project 1"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 1</span>
+            </div>
+          </li>
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/person-inside-a-building-looking-at-a-structure-2808402.jpg"
+                alt="project 2"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 2</span>
+            </div>
+          </li>
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/fashion-photography-of-woman-hands-on-chin-with-glitter-1081685.jpg"
+                alt="project 3"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 3</span>
+            </div>
+          </li>
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/sears-tower-usa-1722183.jpg"
+                alt="project 4"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 4</span>
+            </div>
+          </li>
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/women-s-working-space-6259.jpg"
+                alt="project 5"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 5</span>
+            </div>
+          </li>
+          <li class="project item">
+            <a href="#!">
+              <img
+                src="images/lighted-up-alleyway-1294671.jpg"
+                alt="project 6"
+                width="230"
+                height="260"
+              />
+            </a>
+            <div class="project-name">
+              <span class="text-white">Project 6</span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section> -->
+    </section>
     <section id="testimonials">
       <div class="container">
-        <h1 class="text-dark">Testimonials</h1>
+        <h1 class="uppercase text-dark">Testimonials</h1>
         <p class="text-grey">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
           quidem minima architecto alias amet cupiditate saepe veniam
@@ -299,7 +379,7 @@
       <div class="container">
         <div class="contact-container">
           <div class="contact-container-inner">
-            <h1 class="text-dark">Contact Us</h1>
+            <h1 class="uppercase text-dark">Contact Us</h1>
             <p class="text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
               sint, veniam ipsa animi esse dolorum totam harum quis ratione quae
@@ -324,7 +404,7 @@
     </section>
     <section id="newsletter-form">
       <div class="container">
-        <h1>Subscribe and get updates</h1>
+        <h1 class="uppercase text-dark">Subscribe and get updates</h1>
         <div class="content">
           <p class="text-grey">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -350,6 +430,8 @@
       </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
       const navLinks = document.getElementsByClassName("nav-links")[0];
       const navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
