@@ -380,9 +380,9 @@ header .navbar .active {
 }
 .contact-container-inner input,
 .contact-container-inner textarea {
-  padding: 0.5rem;
+  /* padding: 0.5rem;
   border: 1px solid #696969;
-  border-radius: 0.3rem;
+  border-radius: 0.3rem; */
 }
 .contact-container-inner .inline-fields {
   display: flex;
