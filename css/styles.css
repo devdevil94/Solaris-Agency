@@ -8,16 +8,23 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
+  min-height: 6.9rem;
+  display: flex;
+  align-items: center;
 }
 header .navbar {
   font-size: 1.8rem;
-  background-color: var(--primary-color);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 header .navbar .nav-links {
   list-style-type: none;
   display: none;
+}
+header .navbar .brand {
+  display: flex;
+  align-items: baseline;
 }
 header .navbar .nav-links li .nav-link,
 header .navbar .brand {
@@ -28,16 +35,19 @@ header .navbar .nav-links li {
   text-align: center;
   margin: 1.5rem auto;
 }
+header .navbar .nav-links li .nav-link {
+  padding: 2.5rem 0;
+  display: block;
+}
 header .navbar .brand {
   display: inline-block;
-  font-size: 2.2rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  font-size: 3rem;
 }
 header .navbar .navbar-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+  /* position: absolute; */
+  /* top: 1rem;
+  right: 2rem; */
+  display: block;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
   font-size: 2.4rem;
@@ -393,8 +403,6 @@ section#header-hero {
   margin-bottom: 2rem;
 }
 .contact-container-inner button {
-  background-color: #6c63ff;
-  color: white;
   font-size: 1.6rem;
   padding: 1rem 2rem;
   border-radius: 0.3rem;
@@ -475,22 +483,14 @@ footer section#copyright p {
 }
 
 /* ------------- MEDIA QUERIES ------------- */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 7rem;
-    align-items: center;
   }
   header .navbar .nav-links {
     display: flex;
     margin-right: 3rem;
     flex-direction: row;
     justify-content: flex-end;
-  }
-  header .navbar .nav-links li {
-    margin: 0;
   }
   header .navbar li .nav-link {
     margin-left: 4rem;
