@@ -1,4 +1,4 @@
-section {
+section:not(#copyright) {
   padding: 5rem 0;
 }
 
@@ -378,12 +378,7 @@ header .navbar .active {
   line-height: 2.5rem;
   color: #696969;
 }
-.contact-container-inner input,
-.contact-container-inner textarea {
-  /* padding: 0.5rem;
-  border: 1px solid #696969;
-  border-radius: 0.3rem; */
-}
+
 .contact-container-inner .inline-fields {
   display: flex;
   justify-content: space-between;
@@ -412,6 +407,80 @@ header .navbar .active {
   font-size: 1.6rem;
   padding: 1rem 2rem;
   border-radius: 0.3rem;
+}
+
+/* ------------- Footer ------------- */
+footer {
+  padding-top: 5rem;
+}
+footer section#footer-main {
+  padding: 0;
+}
+footer h1 {
+  margin-bottom: 1rem;
+  color: var(--primary-text-color);
+}
+footer ul > li {
+  margin-bottom: 0.5rem;
+}
+footer ul > li > a {
+  color: var(--primary-text-color);
+}
+footer ul > li > a:hover {
+  color: var(--primary-color);
+}
+footer .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  text-align: center;
+}
+footer .column {
+  flex: 1;
+  padding: 1rem;
+}
+footer .column:nth-child(4) {
+  margin: 0 auto;
+}
+footer .column.about p {
+  color: var(--secondary-text-color);
+  font-size: 1.5rem;
+  max-width: 27rem;
+  margin: 0 auto 1.5rem auto;
+}
+footer ul#social {
+  display: flex;
+}
+footer ul#social > li {
+  margin-right: 1rem;
+  border: 2px solid var(--secondary-color);
+  width: 3.7rem;
+  height: 3.7rem;
+  transition: all 0.3s;
+}
+footer ul#social > li > a {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+footer ul#social > li:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+footer ul#social > li:hover > a i {
+  color: white;
+}
+footer section#copyright {
+  text-align: center;
+  padding: 1rem 0;
+}
+footer section#copyright p {
+  margin: 0;
 }
 
 /* ------------- MEDIA QUERIES ------------- */
@@ -508,6 +577,11 @@ header .navbar .active {
   .contact-container-inner input[name="name"] {
     margin-bottom: 2rem;
   }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -577,6 +651,11 @@ header .navbar .active {
   .contact-container-inner input[name="name"] {
     margin-bottom: 0;
   }
+
+  footer .row {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
   #header-hero .row {
@@ -643,5 +722,10 @@ header .navbar .active {
   }
   .contact-container-inner input[name="name"] {
     margin-bottom: 0;
+  }
+
+  footer .row {
+    flex-direction: row;
+    text-align: left;
   }
 }
