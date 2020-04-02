@@ -4,8 +4,8 @@ $(document).ready(function() {
     dots: false,
     nav: true,
     navText: [
-      "<button class='nav-btn prev-slide bg-secondary'><i class='material-icons text-white'>chevron_left</i></button>",
-      "<button class='nav-btn next-slide bg-secondary'><i class='material-icons text-white'>chevron_right</i></button>"
+      "<button class='nav-btn prev-slide bg-secondary'><i class='fas fa-arrow-left text-white'></i></button>",
+      "<button class='nav-btn next-slide bg-secondary'><i class='fas fa-arrow-right text-white'></i></button>"
     ],
     responsive: {
       0: {
