@@ -4,7 +4,9 @@ section:not(#copyright) {
 
 /* ------------- Top Navigation ------------- */
 :root {
+  --navbar-links-num: 5;
   --navbar-height: 5rem;
+  --mobile-navbar-height: calc(var(--navbar-links-num) * var(--navbar-height));
 }
 header {
   position: fixed;
@@ -92,7 +94,9 @@ header {
     height: 0px;
   }
   .navbar > #nav-checkbox:checked ~ .nav-links {
-    height: calc(100vh - var(--navbar-height));
+    height: var(--mobile-navbar-height);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4),
+      0 4px 2px -2px rgba(0, 0, 0, 0.2);
   }
 }
 
