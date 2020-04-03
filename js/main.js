@@ -26,10 +26,10 @@ $(document).ready(function() {
     }
   });
 
-  const navLinks = $(".nav-links");
-  const navbarToggle = $(".navbar-toggle");
+  const navLinks = $(".navbar > .nav-links > a");
+  const navCheckbox = $(".navbar > #nav-checkbox");
 
-  navbarToggle.click(() => {
-    navLinks.toggleClass("active");
-  });
+  navLinks.each((_, link) =>
+    $(link).click(() => navCheckbox.prop("checked", false))
+  );
 });
