@@ -267,8 +267,8 @@ section#header-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: visibility 0.3s, opacity 0.7s;
   text-align: center;
 }
@@ -562,6 +562,11 @@ footer section#copyright p {
     width: 50%;
   }
 
+  #portfolio .projects-list .project .project-name {
+    visibility: visible;
+    opacity: 1;
+  }
+
   #newsletter-form .content form {
     flex-direction: column;
   }
@@ -634,6 +639,11 @@ footer section#copyright p {
     width: 50%;
   }
 
+  #portfolio .projects-list .project .project-name {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   #newsletter-form .content form {
     flex-direction: row;
   }
@@ -704,6 +714,11 @@ footer section#copyright p {
   #services_marketing .row .column {
     /* text-align: left; */
     width: 50%;
+  }
+
+  #portfolio .projects-list .project .project-name {
+    visibility: hidden;
+    opacity: 0;
   }
 
   #newsletter-form .content form {
