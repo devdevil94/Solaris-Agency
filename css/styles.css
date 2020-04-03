@@ -42,14 +42,58 @@ header {
   padding: 1.3rem 1rem;
   text-decoration: none;
   transition: all 0.4s;
-  height: 100%;
+  height: var(--navbar-height);
 }
 .navbar > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 .navbar > #nav-checkbox {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    height: 100%;
+  }
+  .navbar > .nav-btn > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--navbar-height);
+    height: var(--navbar-height);
+    padding: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .navbar > .nav-btn > label > i {
+    font-size: 1.6rem;
+  }
+  .navbar > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    transition: all 0.2s ease-in;
+    overflow-y: hidden;
+    top: var(--navbar-height);
+    left: 0px;
+  }
+  .navbar > .nav-links > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar > #nav-checkbox:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .navbar > #nav-checkbox:checked ~ .nav-links {
+    height: calc(100vh - var(--navbar-height));
+  }
 }
 
 /* ------------- Hero ------------- */
