@@ -354,6 +354,9 @@ section#header-hero {
   flex-direction: column;
   justify-content: space-between;
 }
+#testimonials .column p {
+  font-size: 1.6rem;
+}
 #testimonials .column .person-info {
   display: flex;
   /* margin-bottom: 1.5rem; */
@@ -366,11 +369,11 @@ section#header-hero {
   height: 6.5rem;
   margin-right: 1.5rem;
 }
-#testimonials .column .person-info span h3.person-info_name {
-  font-size: 1.8rem;
+#testimonials .column .person-info span h2.person-info_name {
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#testimonials .column .person-info span h4.person-info_occup {
+#testimonials .column .person-info span h3.person-info_occup {
   font-weight: normal;
   font-size: 1.5rem;
 }
