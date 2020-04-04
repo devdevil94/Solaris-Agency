@@ -50,6 +50,26 @@ $(document).ready(function() {
     })
   );
 
+  const navFooterLinks = $("footer .nav-footer > li > a");
+  navFooterLinks.each((_, link) =>
+    $(link).click(function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800,
+          () => {
+            window.location.hash = hash;
+          }
+        );
+      }
+    })
+  );
+
   AOS.init({
     once: true
   });
