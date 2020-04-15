@@ -1,0 +1,206 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@import url("https://fonts.googleapis.com/css?family=Tomorrow|Rubik|Roboto&display=swap");
+
+/* ------------- THEME ------------- */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #ffbb00;
+  --primary-text-color: #2d2d2d;
+  --secondary-text-color: #58647b;
+  --grey-text-color: #58647b;
+  --grey-light-color: #eaeaea;
+  /* --primary-text-color: #3e3e54; */
+  /* --primary-text-color: #555555; */
+  /* --secondary-text-color: #cccccc; */
+  /* --secondary-text-color: #696969; */
+  /* --secondary-text-color: #a9a9a9; */
+}
+
+/* ------------- DEFAULT ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Roboto";
+  /* font-family: "Roboto Mono", monospace; */
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 10px;
+  /* font-family: "Oswald", sans-serif; */
+}
+body {
+  background-color: whitesmoke;
+}
+
+div,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ------------- UTILITIES ------------- */
+.rounded {
+  border-radius: 0.5rem;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.float {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.float-md {
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.float-lg {
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.flex-2 {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.separator {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 4rem auto;
+}
+.separator-left {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 4rem 0;
+}
+.separator-left-sm {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 2rem 0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.text-white {
+  color: #fff;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-grey {
+  color: var(--grey-text-color);
+}
+.text-dark {
+  color: var(--primary-text-color);
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+.w-1\/3 {
+  width: 33.33%;
+}
+.w-2\/3 {
+  width: 66.67%;
+}
+
+.text-field {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--grey-text-color);
+}
+
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
